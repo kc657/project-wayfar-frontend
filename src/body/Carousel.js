@@ -1,0 +1,25 @@
+import React, {Component} from 'react'
+
+class Carousel extends Component {
+
+  render () {
+    let citiesImages = this.props.cities.map(city => {
+      return (
+        <a key={city._id} className='carousel-item click-for-city' data-city-id={city._id} onClick={this.props.handleCitySelect}>
+          <img src={city.img_url} alt='' key={city._id} />
+        </a>
+      )
+    })
+    return (
+      <div className='col s12 carousel-holder'>
+        <div className='carousel carousel-slider'>
+          { citiesImages }
+        </div>
+        <i className='material-icons icon icon-left'>chevron_left</i>
+        <i className='material-icons icon icon-right'>chevron_right</i>
+      </div>
+    )
+  }
+}
+
+export default Carousel
