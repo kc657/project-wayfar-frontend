@@ -8,8 +8,8 @@ class Header extends Component {
       return (
         <header>
           <nav className='light-blue lighten-1'>
-            <a className='brand-logo'>Way Way Far</a>
-            <ul id='navList' className='right hide-on-med-and-down'>
+            <a className='brand-logo left'>Way Way Far</a>
+            <ul id='navList' className='right'>
               <li><a onClick={this.props.toggleSignInModal}>Sign In</a></li>
               <li><a onClick={this.props.toggleSignupModal}>Sign Up</a></li>
             </ul>
