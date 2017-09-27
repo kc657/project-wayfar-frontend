@@ -25,13 +25,6 @@ class Carousel extends Component {
           description: 'Sydney, capital of New South Wales and one of Australias largest cities, is best known for its harbourfront Sydney Opera House, with a distinctive sail-like design. Massive Darling Harbour and the smaller Circular Quay port are hubs of waterside life, with the arched Harbour Bridge and esteemed Royal Botanic Garden nearby.',
           img_url: 'https://image.ibb.co/g2up15/aussie.jpg',
           __v: 0
-        },
-        {
-          _id: '59a59993ae49b000075d0061',
-          name: 'Shanghai',
-          description: 'Shanghai, Hu for short, is a renowned international metropolis drawing more and more attention from all over the world. Situated on the estuary of Yangtze River, it serves as the most influential economic, financial, international trade, and cultural center in East China.',
-          img_url: 'https://media2.giphy.com/media/YwJHMn7GXkTNS/giphy.gif',
-          __v: 0
         }
       ]
     }
