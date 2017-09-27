@@ -15,6 +15,24 @@ class BodyContainer extends Component {
     }
   }
 
+  componentWillMount = () => {
+    $.ajax({
+      method: 'GET',
+      url: 'https://wayfar.herokuapp.com/api/cities/'
+    })
+    .then((res) => {
+      this.setState(
+        {
+          cities: res,
+          selectedCityObj: res[0]
+        }
+      )
+      this.loadPostsFromServer()
+    }, (err) => {
+      console.log('error: ', err)
+    })
+  }
+
   loadCitiesFromServer = () => {
     $.ajax({
       method: 'GET',
